@@ -4,8 +4,9 @@ class PaintersPartitionProblem {
 
 	public int paint(int A, int B, int[] C) {
 
-        long low = getMax(C); // units to paint when there are C.length painters
+        long low = getMax(C); // units to paint when there are infinte number of painters
         long high = getSum(C); // units to paint when there is only one painter
+
         while(low < high) {
 
             long mid = (low + high) / 2;
